@@ -4,15 +4,31 @@ from ttkbootstrap.constants import *
 from typing import Callable, Optional
 from engine.ui.components import LogView
 from engine.config.settings import APP_THEME, APP_TITLE, WINDOW_SIZE
+from tkinter import PhotoImage
 
 class OrganizerWindow(ttk.Window):
-    def __init__(self, on_select_folder: Callable[[], None], on_start: Callable[[], None]):
+    def __init__(self, on_select_folder, on_start):
         super().__init__(
             title=APP_TITLE,
             themename=APP_THEME,
             resizable=(False, False)
         )
-        # Set size via geometry for potentially faster init than size parameter
+ 
+        import sys, os
+ 
+        def resource_path(relative_path):
+            try:
+                base_path = sys._MEIPASS
+            except Exception:
+                base_path = os.path.abspath(".")
+            return os.path.join(base_path, relative_path)
+ 
+        icon_path = resource_path("assets/logoEXE.ico")
+ 
+        self.after(0, lambda: self.iconbitmap(icon_path))
+        self.after(10, lambda: self.wm_iconbitmap(icon_path))
+        self.after(50, lambda: self.wm_iconbitmap(icon_path))
+ 
         self.geometry(f"{WINDOW_SIZE[0]}x{WINDOW_SIZE[1]}")
         
         self.on_select_folder = on_select_folder
