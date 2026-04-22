@@ -22,7 +22,8 @@
 O **Directory Organizer Engine** é uma ferramenta desenvolvida para resolver a desordem digital. Com uma interface moderna e intuitiva, ele automatiza a tarefa tediosa de classificar arquivos, movendo-os para pastas categorizadas com base em suas extensões, garantindo que sua área de trabalho e pastas de downloads permaneçam sempre limpas.
 
 <p align="center">
-  <img src="assets/mockup.png" width="800" alt="Application Interface Mockup">
+<img width="798" height="625" alt="image" src="https://github.com/user-attachments/assets/319cac29-6437-4584-a3ff-2b2e0e171f9c" />
+
 </p>
 
 ## 🚀 Funcionalidades Principais
