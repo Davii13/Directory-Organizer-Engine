@@ -198,7 +198,11 @@ Contribuições são bem-vindas! Siga estes passos:
 4. Push para a branch (`git push origin feature/NovaFeature`).
 5. Abra um Pull Request.
 
-## 📄 Licença
+## � Agradecimentos
+
+Agradecimentos especiais ao Professor João Paulo Aramuni pela orientação e ajuda na criação deste projeto. Sua contribuição foi fundamental para o desenvolvimento e aprendizado.
+
+## �📄 Licença
 
 Distribuído sob a [Licença MIT](LICENSE). Veja o arquivo para detalhes.
 
