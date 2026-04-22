@@ -1,14 +1,19 @@
-import os
-
 # Extension to Folder mapping
 FILE_CATEGORIES = {
     'PDFs': ['.pdf'],
-    'Executáveis': ['.exe', '.msi', '.bat', '.sh'],
+    'Executáveis': ['.exe', '.msi', '.bat', '.sh','.dmg'],
     'Imagens': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'],
     'Vídeos': ['.mp4', '.mkv', '.avi', '.mov', '.wmv', '.flv'],
     'Compactados': ['.zip', '.rar', '.7z', '.tar', '.gz'],
-    'Documentos': ['.docx', '.doc', '.txt', '.xlsx', '.xls', '.pptx', '.ppt', '.odt'],
+    'Documentos': ['.docx', '.doc', '.txt', '.odt','.md'],
     'Áudio': ['.mp3', '.wav', '.flac', '.ogg', '.m4a'],
+    'Planilhas':['.xlsx', '.xls','.csv','.ods'],
+    'Apresentações':['.pptx', '.ppt','odp'],
+    'Códigos': ['.py', '.java', '.js', '.ts', '.html', '.css', '.cpp', '.c', '.cs', '.php'],
+    'Configuração': ['.json', '.xml', '.yml', '.yaml', '.ini', '.env'],
+    'Imagens de Disco': ['.iso', '.img'],
+    'Segurança': ['.pem', '.key', '.crt', '.cer'],
+    'Bibliotecas': ['.dll', '.so', '.dylib']
 }
 
 # Theme settings

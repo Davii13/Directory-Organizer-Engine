@@ -7,7 +7,8 @@ def setup_logging():
     logging.basicConfig(
         filename=LOG_FILE_NAME,
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        encoding='utf-8'
     )
 
 def main():

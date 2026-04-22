@@ -1,3 +1,4 @@
+import logging
 import shutil
 from pathlib import Path
 from typing import Callable, Optional
@@ -55,6 +56,7 @@ class OrganizerService:
                 if progress_callback:
                     percentage = (processed_count / total_files) * 100
                     msg = f"Movido: {file_path.name} -> {category}/"
+                    logging.info(f"Movido: {file_path.name} -> {category}/")
                     if final_path.name != file_path.name:
                         msg += f" (renomeado para {final_path.name})"
                     progress_callback(percentage, msg)

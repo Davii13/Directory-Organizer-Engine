@@ -1,3 +1,4 @@
+import logging
 import threading
 from tkinter import filedialog, messagebox
 from engine.ui.app_ui import OrganizerWindow
@@ -52,11 +53,13 @@ class MainApplication:
                     "Concluído", 
                     "A organização foi finalizada com sucesso!"
                 ))
+                logging.info("A organização foi finalizada com sucesso!")
             else:
                 self.window.after(0, lambda: messagebox.showerror(
                     "Erro", 
                     "Não foi possível completar a organização. Verifique os logs."
                 ))
+                logging.error("Não foi possível completar a organização. Verifique os logs.")
                 
         except Exception as e:
             self.window.after(0, lambda e=e: self.window.update_progress(0, f"Erro crítico: {str(e)}"))
